@@ -7,3 +7,7 @@ export function formatName(first: string, last: string): { formattedName: string
         numberOfletters: name.length
     };
 }
+
+export function isEven(n: number) {
+    return n % 2 === 0;
+}

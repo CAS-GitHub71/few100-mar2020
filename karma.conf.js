@@ -7,7 +7,7 @@ module.exports = (config) => {
         files: [
             { pattern: 'spec/*.spec.js', watched: false },
             { pattern: 'spec/**/*.spec.js', watched: false },
-          { pattern: 'spec/*.spec.ts', watched: false },
+            { pattern: 'spec/*.spec.ts', watched: false },
             { pattern: 'spec/**/*.spec.ts', watched: false }
         ],
 
@@ -21,9 +21,9 @@ module.exports = (config) => {
         webpack,
 
         reporters: ['progress', 'karma-typescript'],
-
+        // browsers: ['Chrome'],
         browsers: ['ChromeHeadless'], // or just 'Chrome', 'ie', 'firefox', etc.
-   
-        
+
+
     });
 };

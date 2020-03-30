@@ -32,6 +32,7 @@ describe('declare a variable in typescript', () => {
             type MathOperation = (a: number, b: number) => number;
             const add: MathOperation = (a, b) => a + b;
             expect(add(2, 2)).toBe(4);
+            // tslint:disable-next-line
             const subtract: MathOperation = function (a: number, b: number) {
                 return a - b;
             };
@@ -82,7 +83,6 @@ describe('array literals and tuple types', () => {
         const numbers: (number | string)[] = [1, 2, 3, 4];
         numbers[0] = 'Tacos';
         numbers[2] = 'Burritos';
-        let numbers2: Array<number | string>;
     });
     it('has array destructiuring', () => {
         //                  0      1       2        3;
